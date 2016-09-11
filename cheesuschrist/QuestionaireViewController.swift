@@ -50,7 +50,11 @@ class QuestionaireViewController: UIViewController {
                 response.updateValue("yes", forKey: questions[index])
                 let alert = UIAlertController(title: "Sorry", message: "We cannot provide you with an accurate prescription", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
-                    exit(0)
+                    self.dismissViewControllerAnimated(false, completion: nil)
+                    
+                    let mainViewController: BeginTestViewController = BeginTestViewController()
+                    
+                    self.presentViewController(mainViewController, animated: true, completion: nil)
                 }))
                 self.presentViewController(alert, animated: true, completion: nil)
             } else {
@@ -65,13 +69,13 @@ class QuestionaireViewController: UIViewController {
     }
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        // Only allow Landscape
-        return [.LandscapeLeft, .LandscapeRight]
+        // Only allow Portrait
+        return [.Portrait]
     }
     
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-        // Only allow Landscape
-        return UIInterfaceOrientation.LandscapeLeft
+        // Only allow Portrait
+        return UIInterfaceOrientation.Portrait
     }
     
     override func didReceiveMemoryWarning() {

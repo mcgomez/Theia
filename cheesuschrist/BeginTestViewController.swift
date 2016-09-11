@@ -10,12 +10,16 @@ import UIKit
 
 class BeginTestViewController: UIViewController {
 
+    @IBOutlet weak var beginTest: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         // Force the device in portrait mode when the view controller gets loaded
         UIDevice.currentDevice().setValue(UIInterfaceOrientation.Portrait.rawValue, forKey: "orientation")
+        
+        let image: UIImage = UIImage.gifWithName("Loading")!
+        beginTest.setImage(image, forState: UIControlState.Normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,5 +41,7 @@ class BeginTestViewController: UIViewController {
         // Only allow Portrait
         return UIInterfaceOrientation.Portrait
     }
+    
+    @IBAction func unwindToMenu(segue: UIStoryboardSegue) {}
 }
 
