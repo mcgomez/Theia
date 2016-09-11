@@ -18,7 +18,7 @@ class EyeCoverInstructionsViewController: UIViewController {
         super.viewDidLoad()
         
         rightEye = true
-        let gif: UIImage = UIImage.gifWithName("RotateRight")!
+        let gif: UIImage = UIImage.gifWithName("RotateLeft")!
         eyeCoverGif = UIImageView(image: gif)
         eyeCoverGif?.frame = CGRectMake(self.view.center.x - 100, self.view.center.y - 100, 200, 200)
         self.view.addSubview(eyeCoverGif!)
