@@ -10,8 +10,11 @@ import Foundation
 import UIKit
 
 class LandoltTestViewController: UIViewController {
-    
+    var rightDone: Bool?
+    var leftDone: Bool?
     var imageView: UIImageView!
+    var prescription: [String: String] = [String: String]()
+    var prescriptionToSend: [String: String] = [String: String]()
     
     @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var bottomButton: UIButton!
@@ -20,6 +23,24 @@ class LandoltTestViewController: UIViewController {
     
     var imageName: String = "Landolt_"
     var imageScales: [String] = ["300", "240", "200", "180", "140", "120", "100", "90", "80", "70", "60", "50", "40", "30", "25", "20"]
+    var prescriptionConversion: [String: String] = [
+        "300": "-4.00",
+        "240": "-3.75",
+        "200": "-3.50'",
+        "180": "-3.25",
+        "140": "-3.00",
+        "120": "-2.75",
+        "100": "-2.50",
+        "90": "-2.25",
+        "80": "-2.00",
+        "70": "-1.75",
+        "60": "-1.50",
+        "50": "-1.25",
+        "40": "-1.00",
+        "30": "-0.75",
+        "25": "-.50",
+        "20": "0.00"
+    ]
     var index: Int = 10
     var wrongAnswers: Int = 0
     var rightAnswers: Int = 0
@@ -97,7 +118,18 @@ class LandoltTestViewController: UIViewController {
     }
     
     func calculatePrescription(){
-        print(index)
+        print("Prescription: \(index)")
+        
+        if ((leftDone) != nil) {
+            let value: String = imageScales[index - 1]
+//            prescriptionToSend = [Array(prescriptionConversion.values)[value]: Array(prescription.values)[0]]
+            prescriptionToSend = [prescriptionConversion[value]!: Array(prescription.values)[0]]
+            self.performSegueWithIdentifier("showPrescription", sender: self)
+        } else {
+            // Test done, switch eyes if needed
+            self.performSegueWithIdentifier("changeEyes", sender: self)
+        }
+        
         index = 10
     }
     
@@ -120,13 +152,21 @@ class LandoltTestViewController: UIViewController {
         print(rotateScale)
         imageView.transform = CGAffineTransformMakeRotation(CGFloat(rotateScale)*CGFloat(M_PI)/2.0)
         correctAnswer = rotateScale
-        
-        
-        
-//        imageView.frame = CGRectMake(self.view.center.x - 376/2, self.view.center.y - 376/2, 376, 376)
-//        self.view.addSubview(imageView)
 
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "changeEyes") {
+            let nextController: EyeCoverInstructionsViewController = segue.destinationViewController as! EyeCoverInstructionsViewController
+            nextController.rightEye = true
+            let value: String = imageScales[index - 1]
+            nextController.prescription = ["": "\(prescriptionConversion[value]!)"]
+        } else if (segue.identifier == "showPrescription") {
+            let nextController: PrescriptionViewController = segue.destinationViewController as! PrescriptionViewController
+            nextController.prescription = prescriptionToSend
+        }
+    }
+    
     override func shouldAutorotate() -> Bool {
         // Lock autorotate
         return false

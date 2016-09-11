@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16A5B9DB1D85623500FFF561 /* Landolt_60-S.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B9DA1D85623500FFF561 /* Landolt_60-S.png */; };
 		6D1422611D83915900219D1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1422601D83915900219D1F /* AppDelegate.swift */; };
 		6D1422631D83915900219D1F /* BeginTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1422621D83915900219D1F /* BeginTestViewController.swift */; };
 		6D1422661D83915900219D1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1422641D83915900219D1F /* Main.storyboard */; };
@@ -40,6 +39,8 @@
 		6D49931A1D85082B009E2A4A /* Landolt_300-S.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D49930A1D85082B009E2A4A /* Landolt_300-S.png */; };
 		6D4993201D8513B7009E2A4A /* box-drawing.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D49931E1D8513B7009E2A4A /* box-drawing.png */; };
 		6D4993211D8513B7009E2A4A /* put-in-dat-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D49931F1D8513B7009E2A4A /* put-in-dat-phone.png */; };
+		6D50CCEC1D856E1500C41213 /* Landolt_60-S.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D50CCEB1D856E1500C41213 /* Landolt_60-S.png */; };
+		6D50CCEE1D856EAD00C41213 /* RotateLeft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6D50CCED1D856EAD00C41213 /* RotateLeft.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16A5B9DA1D85623500FFF561 /* Landolt_60-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Landolt_60-S.png"; path = "../../../../Pixelapse/EyeVision/Landolt/Landolt_60-S.png"; sourceTree = "<group>"; };
 		6D14225D1D83915900219D1F /* cheesuschrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cheesuschrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1422601D83915900219D1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1422621D83915900219D1F /* BeginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginTestViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +90,8 @@
 		6D49930A1D85082B009E2A4A /* Landolt_300-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landolt_300-S.png"; sourceTree = "<group>"; };
 		6D49931E1D8513B7009E2A4A /* box-drawing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box-drawing.png"; sourceTree = "<group>"; };
 		6D49931F1D8513B7009E2A4A /* put-in-dat-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "put-in-dat-phone.png"; sourceTree = "<group>"; };
+		6D50CCEB1D856E1500C41213 /* Landolt_60-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landolt_60-S.png"; sourceTree = "<group>"; };
+		6D50CCED1D856EAD00C41213 /* RotateLeft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RotateLeft.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				6D15DE9A1D85526D00A80F8A /* RotateRight.gif */,
+				6D50CCED1D856EAD00C41213 /* RotateLeft.gif */,
 				6D15DE941D85481400A80F8A /* logo.png */,
 				6D15DE901D853D2800A80F8A /* Loading.gif */,
 				6D49931E1D8513B7009E2A4A /* box-drawing.png */,
@@ -171,7 +174,7 @@
 				6D4992FD1D85082B009E2A4A /* Landolt_30-S.png */,
 				6D4992FE1D85082B009E2A4A /* Landolt_40-S.png */,
 				6D4992FF1D85082B009E2A4A /* Landolt_50-S.png */,
-				16A5B9DA1D85623500FFF561 /* Landolt_60-S.png */,
+				6D50CCEB1D856E1500C41213 /* Landolt_60-S.png */,
 				6D4993011D85082B009E2A4A /* Landolt_70-S.png */,
 				6D4993021D85082B009E2A4A /* Landolt_80-S.png */,
 				6D4993031D85082B009E2A4A /* Landolt_90-S.png */,
@@ -275,7 +278,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A5B9DB1D85623500FFF561 /* Landolt_60-S.png in Resources */,
 				6D15DE9B1D85526D00A80F8A /* RotateRight.gif in Resources */,
 				6D4993211D8513B7009E2A4A /* put-in-dat-phone.png in Resources */,
 				6D15DE951D85481400A80F8A /* logo.png in Resources */,
@@ -290,8 +292,10 @@
 				6D4993151D85082B009E2A4A /* Landolt_120-S.png in Resources */,
 				6D4993201D8513B7009E2A4A /* box-drawing.png in Resources */,
 				6D49930C1D85082B009E2A4A /* Landolt_25-S.png in Resources */,
+				6D50CCEC1D856E1500C41213 /* Landolt_60-S.png in Resources */,
 				6D4993131D85082B009E2A4A /* Landolt_90-S.png in Resources */,
 				6D1422681D83915900219D1F /* Assets.xcassets in Resources */,
+				6D50CCEE1D856EAD00C41213 /* RotateLeft.gif in Resources */,
 				6D4993141D85082B009E2A4A /* Landolt_100-S.png in Resources */,
 				6D4993171D85082B009E2A4A /* Landolt_180-S.png in Resources */,
 				6D49930B1D85082B009E2A4A /* Landolt_20-S.png in Resources */,
