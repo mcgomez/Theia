@@ -11,7 +11,7 @@ import UIKit
 
 class LandoltTestViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
+    var imageView: UIImageView!
     
     @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var bottomButton: UIButton!
@@ -28,7 +28,7 @@ class LandoltTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Force the device in portrait mode when the view controller gets loaded
+        // Force the device in landscape mode when the view controller gets loaded
         UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeLeft.rawValue, forKey: "orientation")
         cTest()
     }
@@ -37,46 +37,53 @@ class LandoltTestViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     @IBAction func topPressed(sender: AnyObject) {
-        let userAnswer = 0
-        checkUserAnswer(userAnswer)
-    }
-    @IBAction func rightPressed(sender: AnyObject) {
-        let userAnswer = 1
-        checkUserAnswer(userAnswer)
-    }
-    @IBAction func bottomPressed(sender: AnyObject) {
         let userAnswer = 2
         checkUserAnswer(userAnswer)
     }
-    @IBAction func leftPressed(sender: AnyObject) {
+    @IBAction func rightPressed(sender: AnyObject) {
         let userAnswer = 3
+        checkUserAnswer(userAnswer)
+    }
+    @IBAction func bottomPressed(sender: AnyObject) {
+        let userAnswer = 0
+        checkUserAnswer(userAnswer)
+    }
+    @IBAction func leftPressed(sender: AnyObject) {
+        let userAnswer = 1
         checkUserAnswer(userAnswer)
     }
     
     func checkUserAnswer(userAnswer: Int){
-        if(increasingSharp != nil && increasingSharp!){
-            if(userAnswer != correctAnswer){
-                wrongAnswers += 1
-                if(wrongAnswers >= 2){
-                    index -= 1
-                    calculatePrescription()
+        print("UserAnswer: \(userAnswer)")
+        print(increasingSharp)
+        if(increasingSharp != nil){
+            if(increasingSharp!){
+                if(userAnswer != correctAnswer){
+                    wrongAnswers += 1
+                    if(wrongAnswers >= 2){
+                        index -= 1
+                        calculatePrescription()
+                    }
+                } else {
+                    index += 1
+                    wrongAnswers = 0
                 }
             } else {
-                index += 1
-                wrongAnswers = 0
-            }
-        } else {
-            if(userAnswer != correctAnswer){
-                index -= 1
-            } else {
-                rightAnswers += 1
-                if(rightAnswers > 2){
-                    index += 1
-                    calculatePrescription()
+                if(userAnswer != correctAnswer){
+                    index -= 1
+                    rightAnswers = 0
+                } else {
+                    rightAnswers += 1
+                    if(rightAnswers > 2){
+                        index += 1
+                        calculatePrescription()
+                    }
                 }
             }
         }
+        
         if(index == 10){
             if(userAnswer != correctAnswer){
                 wrongAnswers += 1
@@ -87,25 +94,29 @@ class LandoltTestViewController: UIViewController {
             }
         }
         cTest()
-
-
-
     }
     
     func calculatePrescription(){
         print(index)
+        index = 10
     }
     
     func cTest() {
-        
-        print("\(imageName)\(imageScales[index])-S.png")
         
         // Start Algorithm
         if(index < 0 || index >= imageScales.count){
             calculatePrescription()
         }
-        imageView.image = UIImage(named: "\(imageName)\(imageScales[index])-S.png")
-        let rotateScale = Int(arc4random_uniform(3))
+        imageView.removeFromSuperview()
+        
+        imageView = UIImageView(image: UIImage(named: "\(imageName)\(imageScales[index])-S.png"))
+        imageView.frame = CGRectMake(self.view.center.x - 376/2, self.view.center.y - 376/2, 376, 376)
+        self.view.addSubview(imageView)
+        var rotateScale = Int(arc4random_uniform(3))
+        while (correctAnswer != nil && rotateScale == correctAnswer){
+            rotateScale = Int(arc4random_uniform(3))
+        }
+        
         print(rotateScale)
         imageView.transform = CGAffineTransformMakeRotation(CGFloat(rotateScale)*CGFloat(M_PI)/2.0)
         correctAnswer = rotateScale
@@ -114,6 +125,7 @@ class LandoltTestViewController: UIViewController {
         
 //        imageView.frame = CGRectMake(self.view.center.x - 376/2, self.view.center.y - 376/2, 376, 376)
 //        self.view.addSubview(imageView)
+
     }
     override func shouldAutorotate() -> Bool {
         // Lock autorotate
