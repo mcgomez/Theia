@@ -11,6 +11,7 @@ import UIKit
 
 class TestsViewController: UIViewController {
     @IBOutlet weak var lowerLabel: UILabel!
+    @IBOutlet weak var middleLabel: UILabel!
     @IBOutlet weak var upperLabel: UILabel!
     @IBOutlet weak var rightLabel: UILabel!
     @IBOutlet weak var upLabel: UILabel!
@@ -22,6 +23,7 @@ class TestsViewController: UIViewController {
     @IBOutlet weak var fourLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var begin: UIButton!
+    @IBOutlet weak var boxImage: UIImageView!
    
     var imageName: String = "Landolt_"
     var imageScales: [String] = ["300", "240", "200", "180", "140", "120", "100", "90", "80", "70", "60", "50", "40", "30", "25", "20"]
@@ -31,6 +33,9 @@ class TestsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Force the device in portrait mode when the view controller gets loaded
+        UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeLeft.rawValue, forKey: "orientation")
     }
     
     
@@ -42,7 +47,9 @@ class TestsViewController: UIViewController {
     @IBAction func beginTest(sender: AnyObject) {
         begin.hidden = true
         upperLabel.hidden = true
+        middleLabel.hidden = true
         lowerLabel.hidden = true
+        boxImage.hidden = true
         cTest()
     }
     
@@ -51,6 +58,8 @@ class TestsViewController: UIViewController {
         leftlabel.hidden = false
         downLabel.hidden = false
         upLabel.hidden = false
+        
+        print("\(imageName)\(imageScales[index])-S.png")
         
         // Start Algorithm
         imageView.image = UIImage(named: "\(imageName)\(imageScales[index])-S.png")
@@ -84,5 +93,20 @@ class TestsViewController: UIViewController {
     
     func finishTest() {
         self.performSegueWithIdentifier("showPrescription", sender: nil)
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        // Lock autorotate
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        // Only allow Landscape
+        return [.LandscapeLeft, .LandscapeRight]
+    }
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        // Only allow Landscape
+        return UIInterfaceOrientation.LandscapeLeft
     }
 }

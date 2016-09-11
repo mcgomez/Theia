@@ -27,6 +27,9 @@ class QuestionaireViewController: UIViewController {
         questions.append("Are you currently experiencing any type of eye disease or had eye surgery within the past 12 months?")
         
         questionLabel.text = questions[index]
+        
+        // Force the device in portrait mode when the view controller gets loaded
+        UIDevice.currentDevice().setValue(UIInterfaceOrientation.Portrait.rawValue, forKey: "orientation")
     }
     
     @IBAction func answer(sender: AnyObject) {
@@ -47,13 +50,28 @@ class QuestionaireViewController: UIViewController {
                 response.updateValue("yes", forKey: questions[index])
                 let alert = UIAlertController(title: "Sorry", message: "We cannot provide you with an accurate prescription", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
-                    self.performSegueWithIdentifier("finishedQuestions", sender: nil)
+                    exit(0)
                 }))
                 self.presentViewController(alert, animated: true, completion: nil)
             } else {
                 response.updateValue("no", forKey: questions[index])
             }
         }
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        // Lock autorotate
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        // Only allow Landscape
+        return [.LandscapeLeft, .LandscapeRight]
+    }
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        // Only allow Landscape
+        return UIInterfaceOrientation.LandscapeLeft
     }
     
     override func didReceiveMemoryWarning() {
