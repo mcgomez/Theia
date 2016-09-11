@@ -14,11 +14,6 @@ class InstructionViewController: UIViewController {
     @IBOutlet weak var middleLabel: UILabel!
     @IBOutlet weak var begin: UIButton!
     @IBOutlet weak var boxImage: UIImageView!
-   
-    var imageName: String = "Landolt_"
-    var imageScales: [String] = ["300", "240", "200", "180", "140", "120", "100", "90", "80", "70", "60", "50", "40", "30", "25", "20"]
-    var index: Int = 0
-    var wrongAnswers: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
