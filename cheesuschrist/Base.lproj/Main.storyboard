@@ -328,13 +328,45 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wb-qP-R2S">
                                 <rect key="frame" x="158" y="12" width="351" height="351"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmG-Dx-Apc">
+                                <rect key="frame" x="23" y="173" width="30" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="leftPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="fbt-NS-WGa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAm-fe-NKK">
+                                <rect key="frame" x="318" y="20" width="30" height="30"/>
+                                <state key="normal" title="Top"/>
+                                <connections>
+                                    <action selector="topPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="II8-bb-u3c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIy-bm-hD3">
+                                <rect key="frame" x="308" y="325" width="51" height="30"/>
+                                <state key="normal" title="Bottom"/>
+                                <connections>
+                                    <action selector="bottomPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="AxS-se-yWh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnl-aD-e8H">
+                                <rect key="frame" x="605" y="167" width="36" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="rightPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="sds-UU-Nsj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="bottomButton" destination="kIy-bm-hD3" id="B67-a1-uNX"/>
                         <outlet property="imageView" destination="7wb-qP-R2S" id="h8a-he-b1X"/>
+                        <outlet property="leftButton" destination="lmG-Dx-Apc" id="M4l-0w-hAq"/>
+                        <outlet property="rightButton" destination="Tnl-aD-e8H" id="DSM-ZK-in3"/>
+                        <outlet property="topButton" destination="oAm-fe-NKK" id="H1O-k8-Cf2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnU-sc-vgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
