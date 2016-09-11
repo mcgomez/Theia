@@ -1,5 +1,5 @@
 //
-//  LandoltTestViewController.swift
+//  EyeCoverInstructionsViewController.swift
 //  cheesuschrist
 //
 //  Created by Marisa Gomez on 9/11/16.
@@ -9,9 +9,19 @@
 import Foundation
 import UIKit
 
-class LandoltTestViewController: UIViewController {
+class EyeCoverInstructionsViewController: UIViewController {
+    
+    var eyeCoverGif: UIImageView?
+    var rightEye: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        rightEye = true
+        let gif: UIImage = UIImage.gifWithName("RotateRight")!
+        eyeCoverGif = UIImageView(image: gif)
+        eyeCoverGif?.frame = CGRectMake(self.view.center.x - 100, self.view.center.y - 100, 200, 200)
+        self.view.addSubview(eyeCoverGif!)
         
         UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeLeft.rawValue, forKey: "orientation")
     }
