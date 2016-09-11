@@ -41,6 +41,7 @@
 		6D4993211D8513B7009E2A4A /* put-in-dat-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D49931F1D8513B7009E2A4A /* put-in-dat-phone.png */; };
 		6D50CCEC1D856E1500C41213 /* Landolt_60-S.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D50CCEB1D856E1500C41213 /* Landolt_60-S.png */; };
 		6D50CCEE1D856EAD00C41213 /* RotateLeft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6D50CCED1D856EAD00C41213 /* RotateLeft.gif */; };
+		6D50CCF01D857CA600C41213 /* Housing-Animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6D50CCEF1D857CA600C41213 /* Housing-Animation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		6D49931F1D8513B7009E2A4A /* put-in-dat-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "put-in-dat-phone.png"; sourceTree = "<group>"; };
 		6D50CCEB1D856E1500C41213 /* Landolt_60-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landolt_60-S.png"; sourceTree = "<group>"; };
 		6D50CCED1D856EAD00C41213 /* RotateLeft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RotateLeft.gif; sourceTree = "<group>"; };
+		6D50CCEF1D857CA600C41213 /* Housing-Animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Housing-Animation.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		6D49931B1D85082F009E2A4A /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				6D50CCEF1D857CA600C41213 /* Housing-Animation.gif */,
 				6D15DE9A1D85526D00A80F8A /* RotateRight.gif */,
 				6D50CCED1D856EAD00C41213 /* RotateLeft.gif */,
 				6D15DE941D85481400A80F8A /* logo.png */,
@@ -293,6 +296,7 @@
 				6D4993201D8513B7009E2A4A /* box-drawing.png in Resources */,
 				6D49930C1D85082B009E2A4A /* Landolt_25-S.png in Resources */,
 				6D50CCEC1D856E1500C41213 /* Landolt_60-S.png in Resources */,
+				6D50CCF01D857CA600C41213 /* Housing-Animation.gif in Resources */,
 				6D4993131D85082B009E2A4A /* Landolt_90-S.png in Resources */,
 				6D1422681D83915900219D1F /* Assets.xcassets in Resources */,
 				6D50CCEE1D856EAD00C41213 /* RotateLeft.gif in Resources */,

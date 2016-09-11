@@ -25,14 +25,14 @@ class EyeCoverInstructionsViewController: UIViewController {
             upperLabel.text = "Please cover your left eye with the attached eye cover."
             leftEye = true
             
-            let gif: UIImage = UIImage.gifWithName("RotateRight")!
+            let gif: UIImage = UIImage.gifWithName("RotateLeft")!
             eyeCoverGif = UIImageView(image: gif)
             eyeCoverGif?.frame = CGRectMake(self.view.center.x - 100, self.view.center.y - 100, 200, 200)
             self.view.addSubview(eyeCoverGif!)
         } else {
             rightEye = true
             
-            let gif: UIImage = UIImage.gifWithName("RotateLeft")!
+            let gif: UIImage = UIImage.gifWithName("RotateRight")!
             eyeCoverGif = UIImageView(image: gif)
             eyeCoverGif?.frame = CGRectMake(self.view.center.x - 100, self.view.center.y - 100, 200, 200)
             self.view.addSubview(eyeCoverGif!)

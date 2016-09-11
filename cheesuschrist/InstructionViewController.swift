@@ -21,6 +21,8 @@ class InstructionViewController: UIViewController {
         
         // Force the device in portrait mode when the view controller gets loaded
         UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeLeft.rawValue, forKey: "orientation")
+        let image: UIImage = UIImage.gifWithName("Housing-Animation")!
+        boxImage.image = image;
     }
     
     
@@ -29,23 +31,23 @@ class InstructionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func beginTest(sender: AnyObject) {
-        begin.hidden = true
-        middleLabel.hidden = true
-        lowerLabel.hidden = true
-        boxImage.hidden = true
-        cTest()
-    }
+//    @IBAction func beginTest(sender: AnyObject) {
+//        begin.hidden = true
+//        middleLabel.hidden = true
+//        lowerLabel.hidden = true
+//        boxImage.hidden = true
+//        cTest()
+//    }
     
-    func cTest() {
-        
-//        print("\(imageName)\(imageScales[index])-S.png")
-        
-        // Start Algorithm
-//        imageView.image = UIImage(named: "\(imageName)\(imageScales[index])-S.png")
-//        imageView.frame = CGRectMake(self.view.center.x, self.view.center.y, 700, 700)
-//        self.view.addSubview(imageView)
-    }
+//    func cTest() {
+//        
+////        print("\(imageName)\(imageScales[index])-S.png")
+//        
+//        // Start Algorithm
+////        imageView.image = UIImage(named: "\(imageName)\(imageScales[index])-S.png")
+////        imageView.frame = CGRectMake(self.view.center.x, self.view.center.y, 700, 700)
+////        self.view.addSubview(imageView)
+//    }
     
     func finishTest() {
         self.performSegueWithIdentifier("showPrescription", sender: nil)

@@ -58,7 +58,7 @@ class LandoltTestViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func topPressed(sender: AnyObject) {
         let userAnswer = 2
         checkUserAnswer(userAnswer)
@@ -122,7 +122,7 @@ class LandoltTestViewController: UIViewController {
         
         if ((leftDone) != nil) {
             let value: String = imageScales[index - 1]
-//            prescriptionToSend = [Array(prescriptionConversion.values)[value]: Array(prescription.values)[0]]
+            //            prescriptionToSend = [Array(prescriptionConversion.values)[value]: Array(prescription.values)[0]]
             prescriptionToSend = [prescriptionConversion[value]!: Array(prescription.values)[0]]
             self.performSegueWithIdentifier("showPrescription", sender: self)
         } else {
@@ -152,7 +152,7 @@ class LandoltTestViewController: UIViewController {
         print(rotateScale)
         imageView.transform = CGAffineTransformMakeRotation(CGFloat(rotateScale)*CGFloat(M_PI)/2.0)
         correctAnswer = rotateScale
-
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
