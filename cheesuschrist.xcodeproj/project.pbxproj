@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34C6D45B1D857016005DEFD7 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C6D45A1D857016005DEFD7 /* SpeechToTextV1.framework */; };
+		34C6D45D1D857023005DEFD7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C6D45C1D857023005DEFD7 /* Default-568h@2x.png */; };
 		6D1422611D83915900219D1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1422601D83915900219D1F /* AppDelegate.swift */; };
 		6D1422631D83915900219D1F /* BeginTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1422621D83915900219D1F /* BeginTestViewController.swift */; };
 		6D1422661D83915900219D1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1422641D83915900219D1F /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34C6D45A1D857016005DEFD7 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		34C6D45C1D857023005DEFD7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6D14225D1D83915900219D1F /* cheesuschrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cheesuschrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1422601D83915900219D1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1422621D83915900219D1F /* BeginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginTestViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C6D45B1D857016005DEFD7 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,7 @@
 		6D1422541D83915900219D1F = {
 			isa = PBXGroup;
 			children = (
+				34C6D45C1D857023005DEFD7 /* Default-568h@2x.png */,
 				6D14225F1D83915900219D1F /* cheesuschrist */,
 				6D1422741D83915900219D1F /* cheesuschristTests */,
 				6D14225E1D83915900219D1F /* Products */,
@@ -189,6 +195,7 @@
 		9BBD5790490AF8C6686F1898 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34C6D45A1D857016005DEFD7 /* SpeechToTextV1.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,7 +250,7 @@
 				TargetAttributes = {
 					6D14225C1D83915900219D1F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2K89K4HSF6;
+						DevelopmentTeam = V9BK854A9H;
 					};
 					6D1422701D83915900219D1F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -298,6 +305,7 @@
 				6D4993101D85082B009E2A4A /* Landolt_60-S.png in Resources */,
 				6D49930F1D85082B009E2A4A /* Landolt_50-S.png in Resources */,
 				6D1422661D83915900219D1F /* Main.storyboard in Resources */,
+				34C6D45D1D857023005DEFD7 /* Default-568h@2x.png in Resources */,
 				6D49930D1D85082B009E2A4A /* Landolt_30-S.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +465,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = cheesuschrist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.cheesuschrist;
@@ -474,6 +486,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = cheesuschrist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.cheesuschrist;

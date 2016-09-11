@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SpeechToTextV1
 
 class QuestionaireViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
@@ -15,6 +16,10 @@ class QuestionaireViewController: UIViewController {
     @IBOutlet weak var noButton: UIButton!
     var questions: [String] = [String]()
     var index: Int = 0
+    
+    let username = "4c2813b3-bff2-4a62-8891-b80b041c9d3c"
+    let password = "S66mEVfm2axE"
+    var speechToText : SpeechToText!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +29,18 @@ class QuestionaireViewController: UIViewController {
         questions.append("Do you have any of the following chronic health conditions: diabetes, heart disease, high blood pressure or migraines with visual distortions?")
         questions.append("Are you currently experiencing any pain, discomfort or sudden loss of vision with your eyes?")
         questions.append("Are you currently experiencing any type of eye disease or had eye surgery within the past 12 months?")
+        
+        // define transcription settings
+        var settings = TranscriptionSettings(contentType: .L16(rate: 44100, channels: 1))
+        settings.continuous = true
+        settings.interimResults = true
+        
+        // start streaming audio and print transcripts
+        let failure = { (error: NSError) in print(error) }
+        _ = speechToText.transcribe(settings, failure: failure) { results in
+            print(results.last?.alternatives.last?.transcript)
+        }
+
         
         questionLabel.text = questions[index]
         
