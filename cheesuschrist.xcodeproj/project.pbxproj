@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16A5B9DB1D85623500FFF561 /* Landolt_60-S.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B9DA1D85623500FFF561 /* Landolt_60-S.png */; };
+		16A5B9DD1D85706500FFF561 /* Housing-Animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 16A5B9DC1D85706500FFF561 /* Housing-Animation.gif */; };
 		6D1422611D83915900219D1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1422601D83915900219D1F /* AppDelegate.swift */; };
 		6D1422631D83915900219D1F /* BeginTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1422621D83915900219D1F /* BeginTestViewController.swift */; };
 		6D1422661D83915900219D1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1422641D83915900219D1F /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		16A5B9DA1D85623500FFF561 /* Landolt_60-S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Landolt_60-S.png"; path = "../../../../Pixelapse/EyeVision/Landolt/Landolt_60-S.png"; sourceTree = "<group>"; };
+		16A5B9DC1D85706500FFF561 /* Housing-Animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Housing-Animation.gif"; path = "../../../../Pixelapse/EyeVision/Housing-Animation.gif"; sourceTree = "<group>"; };
 		6D14225D1D83915900219D1F /* cheesuschrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cheesuschrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1422601D83915900219D1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D1422621D83915900219D1F /* BeginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginTestViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		6D49931B1D85082F009E2A4A /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				16A5B9DC1D85706500FFF561 /* Housing-Animation.gif */,
 				6D15DE9A1D85526D00A80F8A /* RotateRight.gif */,
 				6D15DE941D85481400A80F8A /* logo.png */,
 				6D15DE901D853D2800A80F8A /* Loading.gif */,
@@ -291,6 +294,7 @@
 				6D4993201D8513B7009E2A4A /* box-drawing.png in Resources */,
 				6D49930C1D85082B009E2A4A /* Landolt_25-S.png in Resources */,
 				6D4993131D85082B009E2A4A /* Landolt_90-S.png in Resources */,
+				16A5B9DD1D85706500FFF561 /* Housing-Animation.gif in Resources */,
 				6D1422681D83915900219D1F /* Assets.xcassets in Resources */,
 				6D4993141D85082B009E2A4A /* Landolt_100-S.png in Resources */,
 				6D4993171D85082B009E2A4A /* Landolt_180-S.png in Resources */,

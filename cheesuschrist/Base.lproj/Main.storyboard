@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,14 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOt-Zp-vjj">
-                                <rect key="frame" x="20" y="269" width="330" height="330"/>
+                                <rect key="frame" x="52" y="357" width="270" height="270"/>
                                 <connections>
                                     <segue destination="0Yy-nP-w6c" kind="presentation" id="c7X-QD-epj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Begin by tapping the moving picture:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-8u-RL8">
-                                <rect key="frame" x="11" y="99" width="352" height="79"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Your Testing Method" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-8u-RL8">
+                                <rect key="frame" x="10" y="304" width="352" height="79"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Theia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g8-Dq-DfG">
+                                <rect key="frame" x="11" y="208" width="352" height="56"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="33"/>
+                                <color key="textColor" red="0.16371864414807713" green="0.73807410706006504" blue="0.88419471153846152" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the accessible eye exam" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-PI-d22">
+                                <rect key="frame" x="6" y="240" width="362" height="56"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.1637186441" green="0.73807410709999999" blue="0.88419471149999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Theia-Logo-4" translatesAutoresizingMaskIntoConstraints="NO" id="gRz-5S-ByK">
+                                <rect key="frame" x="12" y="28" width="350" height="186"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Self-Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4d-lm-PBW">
+                                <rect key="frame" x="141" y="618" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,26 +75,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-gL-eBH">
-                                <rect key="frame" x="191" y="486" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.81123060359999999" green="0.91306925370000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
-                                <state key="normal" title="No">
-                                    <color key="titleColor" red="0.29668074842234071" green="0.34114137261999072" blue="0.38221153846153844" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="72" width="277" height="21"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="197" y="551" width="142" height="65"/>
-                                </variation>
-                                <connections>
-                                    <action selector="answer:" destination="0Yy-nP-w6c" eventType="touchUpInside" id="FIi-bF-xsD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rm2-Pb-vCC">
-                                <rect key="frame" x="43" y="487" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.81123060359999999" green="0.91306925370000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="22" y="486" width="140" height="70"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,14 +114,31 @@
                                     <rect key="frame" x="31" y="97" width="312" height="437"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-gL-eBH">
+                                <rect key="frame" x="213" y="486" width="140" height="70"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.29668074842234071" green="0.34114137261999072" blue="0.38221153846153844" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="49" y="72" width="277" height="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="197" y="551" width="142" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="answer:" destination="0Yy-nP-w6c" eventType="touchUpInside" id="FIi-bF-xsD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
-                                <include reference="IIb-gL-eBH"/>
                                 <include reference="rm2-Pb-vCC"/>
                                 <include reference="ugg-pJ-GyC"/>
                                 <include reference="bcX-UM-4PH"/>
+                                <include reference="IIb-gL-eBH"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -129,10 +150,10 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="IIb-gL-eBH"/>
                                 <include reference="rm2-Pb-vCC"/>
                                 <include reference="ugg-pJ-GyC"/>
                                 <include reference="bcX-UM-4PH"/>
+                                <include reference="IIb-gL-eBH"/>
                             </mask>
                         </variation>
                     </view>
@@ -163,16 +184,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place your phone into the box:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S77-6e-sxH">
-                                <rect key="frame" x="171" y="28" width="324" height="36"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="217" y="153" width="232" height="21"/>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="put-in-dat-phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="ajb-Dy-Onp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="put-in-dat-phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="ajb-Dy-Onp">
                                 <rect key="frame" x="172" y="107" width="323" height="162"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="80" y="413" width="240" height="128"/>
@@ -192,7 +204,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qo-jf-6PZ">
                                 <rect key="frame" x="263" y="285" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.81123060359999999" green="0.91306925370000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
@@ -207,14 +219,23 @@
                                     <segue destination="390-mR-PHJ" kind="presentation" id="8Mw-8W-8al"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place your phone into the box:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S77-6e-sxH">
+                                <rect key="frame" x="171" y="33" width="324" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="217" y="153" width="232" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="S77-6e-sxH"/>
                                 <include reference="ajb-Dy-Onp"/>
                                 <include reference="E5H-3m-36P"/>
                                 <include reference="9Qo-jf-6PZ"/>
+                                <include reference="S77-6e-sxH"/>
                             </mask>
                         </variation>
                     </view>
@@ -223,7 +244,6 @@
                     <connections>
                         <outlet property="boxImage" destination="ajb-Dy-Onp" id="ukW-kA-65v"/>
                         <outlet property="lowerLabel" destination="E5H-3m-36P" id="Ypq-Fi-LqB"/>
-                        <outlet property="middleLabel" destination="S77-6e-sxH" id="nTw-ZV-Sf5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qk4-PR-Uxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -308,9 +328,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-PS-ewF">
-                                <rect key="frame" x="233" y="78" width="200" height="200"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-bE-tqr">
                                 <rect key="frame" x="263" y="292" width="140" height="70"/>
                                 <color key="backgroundColor" red="0.81123060359999999" green="0.91306925370000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -328,6 +345,9 @@
                                     <segue destination="eti-Ee-9Ty" kind="presentation" id="osk-1E-wEa"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-PS-ewF">
+                                <rect key="frame" x="136" y="78" width="395" height="200"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -396,7 +416,6 @@
                         <outlet property="rightButton" destination="Tnl-aD-e8H" id="DSM-ZK-in3"/>
                         <outlet property="topButton" destination="oAm-fe-NKK" id="H1O-k8-Cf2"/>
                     </connections>
-
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnU-sc-vgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -510,6 +529,7 @@
     </scenes>
     <resources>
         <image name="Landolt_300-S.png" width="750" height="750"/>
+        <image name="Theia-Logo-4" width="373" height="373"/>
         <image name="put-in-dat-phone.png" width="834" height="422"/>
     </resources>
 </document>

@@ -20,6 +20,24 @@ class LandoltTestViewController: UIViewController {
     
     var imageName: String = "Landolt_"
     var imageScales: [String] = ["300", "240", "200", "180", "140", "120", "100", "90", "80", "70", "60", "50", "40", "30", "25", "20"]
+    var prescriptionConversion: [String: String] = [
+        "300": "-4.00",
+        "240": "-3.75",
+        "200": "-3.50'",
+        "180": "-3.25",
+        "140": "-3.00",
+        "120": "-2.75",
+        "100": "-2.50",
+        "90": "-2.25",
+        "80": "-2.00",
+        "70": "-1.75",
+        "60": "-1.50",
+        "50": "-1.25",
+        "40": "-1.00",
+        "30": "-0.75",
+        "25": "-.50",
+        "20": "-0.00"
+    ]
     var index: Int = 10
     var wrongAnswers: Int = 0
     var rightAnswers: Int = 0
