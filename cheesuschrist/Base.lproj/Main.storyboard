@@ -289,7 +289,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For this next test, you will see an assortment of circles with an open gap. Say which side on which the circle is open" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33v-Hs-AIK">
-                                <rect key="frame" x="258" y="129" width="342" height="115.5"/>
+                                <rect key="frame" x="258" y="129" width="342" height="116"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -375,34 +375,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wb-qP-R2S">
-                                <rect key="frame" x="158" y="12" width="351" height="351"/>
+                                <rect key="frame" x="191" y="45" width="285" height="285"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmG-Dx-Apc">
-                                <rect key="frame" x="23" y="173" width="30" height="30"/>
-                                <state key="normal" title="Left"/>
+                                <rect key="frame" x="0.0" y="80" width="60" height="215"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="0.24374999999999991" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="leftPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="fbt-NS-WGa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAm-fe-NKK">
-                                <rect key="frame" x="318" y="20" width="30" height="30"/>
-                                <state key="normal" title="Top"/>
+                                <rect key="frame" x="226" y="0.0" width="215" height="60"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="0.24374999999999991" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Top">
+                                    <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="topPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="II8-bb-u3c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIy-bm-hD3">
-                                <rect key="frame" x="308" y="325" width="51" height="30"/>
-                                <state key="normal" title="Bottom"/>
+                                <rect key="frame" x="226" y="315" width="215" height="60"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="0.24374999999999991" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Bottom">
+                                    <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="bottomPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="AxS-se-yWh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnl-aD-e8H">
-                                <rect key="frame" x="605" y="167" width="36" height="30"/>
-                                <state key="normal" title="Right"/>
+                                <rect key="frame" x="607" y="80" width="60" height="215"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="0.24374999999999991" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="rightPressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="sds-UU-Nsj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt2-Ji-aMg">
+                                <rect key="frame" x="527" y="328" width="127" height="39"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="0.24374999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="I'm not sure">
+                                    <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notSurePressed:" destination="eti-Ee-9Ty" eventType="touchUpInside" id="fzf-Up-sSG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -414,6 +441,7 @@
                         <outlet property="bottomButton" destination="kIy-bm-hD3" id="B67-a1-uNX"/>
                         <outlet property="imageView" destination="7wb-qP-R2S" id="h8a-he-b1X"/>
                         <outlet property="leftButton" destination="lmG-Dx-Apc" id="M4l-0w-hAq"/>
+                        <outlet property="notSure" destination="Rt2-Ji-aMg" id="nlT-9B-UBX"/>
                         <outlet property="rightButton" destination="Tnl-aD-e8H" id="DSM-ZK-in3"/>
                         <outlet property="topButton" destination="oAm-fe-NKK" id="H1O-k8-Cf2"/>
                         <segue destination="d9x-4i-LLo" kind="presentation" identifier="changeEyes" id="6xE-Hb-8HI"/>
@@ -436,18 +464,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-1.75" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRK-Ll-etf">
-                                <rect key="frame" x="330" y="132" width="303" height="82"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="75"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="427" y="129" width="202" height="118"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="427" y="139" width="170" height="85.5"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpA-Op-0qZ">
                                 <rect key="frame" x="168" y="52" width="75" height="50"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
@@ -470,18 +486,6 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="480" y="58" width="65" height="38"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-1.75" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuZ-fO-W1y">
-                                <rect key="frame" x="43" y="132" width="325" height="82"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="75"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="55" y="131" width="185" height="113"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="138" width="166" height="86"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F29-gI-cUA">
@@ -508,21 +512,56 @@
                                     <rect key="frame" x="113" y="58" width="65" height="39"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx8-XR-VAM">
+                                <rect key="frame" x="266" y="268" width="134" height="46"/>
+                                <color key="backgroundColor" red="0.46062736139999999" green="0.96468176839999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.29668074840000003" green="0.34114137259999999" blue="0.3822115385" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="1Kg-g7-8dg" eventType="touchUpInside" id="I9O-JZ-KOG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-1.75" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRK-Ll-etf">
+                                <rect key="frame" x="50" y="139" width="303" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="427" y="129" width="202" height="118"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="427" y="139" width="170" height="85.5"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-1.75" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuZ-fO-W1y">
+                                <rect key="frame" x="315" y="139" width="325" height="82"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="55" y="131" width="185" height="113"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="138" width="166" height="86"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="dRK-Ll-etf"/>
                                 <include reference="hpA-Op-0qZ"/>
                                 <include reference="Xjb-Xw-VU8"/>
+                                <include reference="dRK-Ll-etf"/>
                                 <include reference="XuZ-fO-W1y"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="dRK-Ll-etf"/>
                                 <include reference="hpA-Op-0qZ"/>
                                 <include reference="Xjb-Xw-VU8"/>
+                                <include reference="dRK-Ll-etf"/>
                                 <include reference="XuZ-fO-W1y"/>
                             </mask>
                         </variation>
@@ -532,6 +571,7 @@
                     <connections>
                         <outlet property="odprescription" destination="XuZ-fO-W1y" id="AhX-ld-v8K"/>
                         <outlet property="osprescription" destination="dRK-Ll-etf" id="ZpD-wo-hOj"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="reset" id="qWn-ob-dYt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZF-cd-czT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -544,6 +584,6 @@
         <image name="Theia-Logo-4" width="373" height="373"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bQV-5P-hJq"/>
+        <segue reference="6xE-Hb-8HI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -31,6 +31,11 @@ class PrescriptionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func reset(sender: AnyObject) {
+        self.performSegueWithIdentifier("reset", sender: self)
+    }
+    
     override func shouldAutorotate() -> Bool {
         // Lock autorotate
         return false

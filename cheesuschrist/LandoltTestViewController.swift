@@ -20,6 +20,7 @@ class LandoltTestViewController: UIViewController {
     @IBOutlet weak var bottomButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var notSure: UIButton!
     
     var imageName: String = "Landolt_"
     var imageScales: [String] = ["300", "240", "200", "180", "140", "120", "100", "90", "80", "70", "60", "50", "40", "30", "25", "20"]
@@ -75,10 +76,26 @@ class LandoltTestViewController: UIViewController {
         let userAnswer = 1
         checkUserAnswer(userAnswer)
     }
+    @IBAction func notSurePressed(sender: AnyObject) {
+        let userAnswer = 4
+        checkUserAnswer(userAnswer)
+    }
     
     func checkUserAnswer(userAnswer: Int){
         print("UserAnswer: \(userAnswer)")
         print(increasingSharp)
+        if (userAnswer == 4) {
+            increasingSharp = false
+            rightAnswers = 0
+            if (index > 0) {
+                index -= 1
+            } else {
+                index = 0
+                calculatePrescription()
+            }
+            cTest()
+            return
+        }
         if(increasingSharp != nil){
             if(increasingSharp!){
                 if(userAnswer != correctAnswer){
@@ -121,8 +138,14 @@ class LandoltTestViewController: UIViewController {
         print("Prescription: \(index)")
         
         if ((leftDone) != nil) {
-            let value: String = imageScales[index - 1]
-            //            prescriptionToSend = [Array(prescriptionConversion.values)[value]: Array(prescription.values)[0]]
+            var value:String = ""
+            
+            if (index > 0) {
+                value = imageScales[index - 1]
+            } else {
+                value = imageScales[index]
+            }
+            
             prescriptionToSend = [prescriptionConversion[value]!: Array(prescription.values)[0]]
             self.performSegueWithIdentifier("showPrescription", sender: self)
         } else {
@@ -159,7 +182,14 @@ class LandoltTestViewController: UIViewController {
         if (segue.identifier == "changeEyes") {
             let nextController: EyeCoverInstructionsViewController = segue.destinationViewController as! EyeCoverInstructionsViewController
             nextController.rightEye = true
-            let value: String = imageScales[index - 1]
+            var value:String = ""
+            
+            if (index > 0) {
+                value = imageScales[index - 1]
+            } else {
+                value = imageScales[index]
+            }
+            
             nextController.prescription = ["": "\(prescriptionConversion[value]!)"]
         } else if (segue.identifier == "showPrescription") {
             let nextController: PrescriptionViewController = segue.destinationViewController as! PrescriptionViewController
